@@ -55,12 +55,14 @@ class App extends Component {
   };
 
   componentDidUpdate(prewProps, prewState) {
+    // Для обновления данных
     if (this.state.contacts !== prewState.contacts) {
       localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
     }
   }
 
   componentDidMount() {
+    // Для хранения в локалке
     const contacts = localStorage.getItem("contacts");
     const ParseContacts = JSON.parse(contacts);
 

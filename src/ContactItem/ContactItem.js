@@ -9,6 +9,8 @@ const ContactItem = ({ contactItem }) => (
 
 ContactItem.propTypes = {
   contactItem: propTypes.object,
+  name: propTypes.string,
+  number: propTypes.string,
 };
 
 export default ContactItem;
